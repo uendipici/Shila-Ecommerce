@@ -1,0 +1,87 @@
+.contact-container{
+    min-height: 100vh;
+    max-width: 1115px;
+    margin: 0 auto;
+}
+
+.contact-banner{
+    text-align: center;
+    justify-content: center;
+    background-color: hsla(0,0%,77.3%,.9254901960784314);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 200px;
+    color: black;
+
+}
+
+.contact-title{
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.contact-text{
+    padding: 4rem 0;
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.contact-text-content {
+    width: 100%;
+    font-weight: 300;
+}
+
+.grid {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 20px;
+    gap: 20px;
+    justify-content: center;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+
+.contact-info-item {
+    border: 1px solid black;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-contact {
+    padding: .5rem 0;
+    font-size: 1.5rem;
+    color: hsla(0,0%,77.3%,.9254901960784314)!important;
+}
+
+.contact-adress{
+    font-weight: 700;
+    font-size: 1.3rem;
+    background-color: white;
+    color: black;
+
+}
+
+.contact-info-map {
+    margin-top: 8%;
+
+}
+.map-image {
+    min-height: 600px;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid grey;
+}
+
+
+
+

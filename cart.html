@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shila Ecommerce</title>
+    <!-- ikonat boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- link css -->
+    <link rel="stylesheet" text="text/css" href="style.css">
+    <link rel="stylesheet" text="text/css" href="catalog.css">
+    <link rel="stylesheet" text="text/css" href="cart.css">
+    <link rel="stylesheet" text="text/css" href="responsive.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+<body>
+
+<!-- Navbar logo -->
+<nav>
+    <label class="toggle">
+        <i class="fa fa-bars"></i>
+    </label>
+    <ul>
+        <li><a href="#">Woman</a></li>
+        <li><a href="#">Man</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+   
+    <div class="logo"><a href="index.html">SHILA</a></div>  
+
+    <div class="iconmenu">
+        <div class="menu-icon">
+            <a href="#"><i class='bx bx-search'></i></a>
+            <a href="#"><i class='bx bx-heart' ></i></a>
+            <a href="cart.html"><i class='bx bx-cart' ><span>0</span></i></a>
+        </div>
+    </div>
+</nav>
+
+<!-- cart -->
+<section>
+<div class="cart container">
+    <div class="cart-banner">
+        <h2 class="cart-title">Shopping Cart</h2>
+    </div>    
+<div class="cart-table">
+    <table>
+       <thead>
+            <tr>
+                <th>Product</th>
+                <th></th>
+                <th></th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th></th>
+            </tr>
+        </thead>
+    <tbody>
+        <tr class="cart-item">
+            <td class="cart-image" style="background-image: url(assets/products1.jpg);"></td>
+                <td class="cart-product">
+                    <h2 class="product-title">Nice clothes</h2>
+                        <div class="cart-size flex">
+                            <p><span class="title">Size :</span>s</p>
+                            <p><span class="title">Color :</span> white</p>
+                        </div>
+                </td>
+                    <td class="price"></td>
+                        <td class="cart-price">
+                            <p>$79</p>
+                        </td>
+                    <td class="cart-quantity">
+                        <div class="quantity">
+                            <input type="number" name="" id="" min="" max="" value="1">
+                        </div>
+                    </td>
+                    <td class="cart-total">
+                        <p>$79</p>
+                    </td>
+                    <td class="cart-remove">
+                        <button class="btn-pink">X</button>
+                    </td>
+        </tr>
+        <tr class="cart-item">
+            <td class="cart-image" style="background-image: url(assets/products2.jpg);"></td>
+                <td class="cart-product">
+                    <h2 class="product-title">White Sneakers</h2>
+                        <div class="cart-size flex">
+                            <p> <span class="title">Size :</span> 40</p>
+                            <p> <span class="title">Color :</span> white</p>
+                        </div>
+                </td>
+                    <td class="price"></td>
+                        <td class="cart-price">
+                            <p>$140</p>
+                        </td>
+                    <td class="cart-quantity">
+                        <div class="quantity">
+                            <input type="number" name="" id="" min="" max="" value="1">
+                        </div>
+                    </td>
+                        <td class="cart-total">
+                            <p>$140</p>
+                        </td>
+                        <td class="cart-remove">
+                            <button class="btn-pink">X</button>
+                        </td>
+        </tr>
+<tr class="next-row">
+    <td>
+        <form class="form-coupon">
+            <p class="title-form" style="font-size: 16px;">Do you have a discount?</p>
+                <div class="cart-input">
+                    <input type="text" placeholder="Coupon Code" class="coupon" value="">
+                    <button class="btn text-center btn-round btn-dark">
+                    <svg class="sc-bdVaJa fUuvxv" fill="#fff" width="22px" height="22px" viewBox="0 0 1024 1024" rotate="0">
+                    <path d="M170 554.75h519.408l-239.404 239.404 61.996 59.846 342-342-342-342-59.844 59.848 237.252 239.402h-519.408v85.5z"></path>
+                    </svg>
+                    </button>
+                </div>
+        </form>
+    </td>
+<td>
+    <div class="cart-shipping">
+        <p class="title-form" style="font-size: 16px;">Shipping</p>
+    <div>
+        <select name="shipping" id="">
+            <option value="">Select Shipping Method</option>
+            <option value="">Express Delivery - $20</option>
+            <option value="">Standar Delivery - $10</option>
+            <option value="">Prime Delivery $30</option>
+        </select>
+    </div>
+    </div>
+</td>
+</tr>
+<tr class="last-row">
+    <td class="calcul">
+<div class="calcul-discount">
+       <p>Shipping</p>
+    <span>
+        <p>+$10</p>
+    </span>
+</div>
+    <div class="calcul-discount">
+        <p>Discount</p>
+            <span>
+        <p class="">-$0</p>
+            </span>
+    </div>
+<div class="calcul-total">
+        <p>Total</p>
+        <span class="f-md"> 
+        <p>$229</p>
+        </span>
+</div>
+<div class="calcul-button">
+    <a href="checkout.html"><button type="button" class="btn btn-dark">Proceed To Checkout</button></a>
+</div>
+  </td>
+       </tr>
+             </tbody>
+          </table>
+        </div>
+    </div>
+</section>
+
+<!-- hr line -->
+<hr id="line" class="line" style="margin-top: 5%;color: #000000;">
+
+<!-- footer -->
+<div class="footer-top container flex text-center">
+  <div class="list-group text-center">
+    <div class="footer-links flex">
+       <li class="footer-link"><a href="#">Policy</a></li>
+       <li class="footer-link"><a href="#">Terms</a></li>
+       <li class="footer-link"><a href="#">FAQS</a></li>
+       <li class="footer-link"><a href="#">Support</a></li>
+      </div>
+      <div class="social-link flex">
+        <li class="footer-social-link"><a href="#">Facebook</a></li>
+        <li class="footer-social-link"><a href="#">Instagram</a></li>
+        <li class="footer-social-link"><a href="#">Twitter</a></li>
+        <li class="footer-social-link"><a href="#">Youtube</a></li>
+      </div>
+  </div>
+  </div>
+
+<!-- footer bottom -->
+  <div class="footer-bottom text-center bg-grey py-2 f-sm">
+    <p>© 2024 SHILA </p>
+  </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,536 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.toggle{
+    font-size: 35px;
+    color: #000000;
+    float: left;
+    line-height: 45px;
+    margin-left: 5%;
+    cursor: pointer;
+    display: none;
+    margin-top: 1%;
+}
+
+nav{
+    background-color: #ffffff;
+    height: 81px;
+    width: 100%;
+    margin-top: 0.5%;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    position: sticky;
+
+}
+
+ul{
+    float: left;
+    margin-left: 5%;
+
+}
+
+.logo{
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    float: left;
+    margin-left: 23%;
+    line-height: 60px; 
+}
+
+.logo a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.iconmenu{
+    float: right;
+    margin-right:12%; 
+}
+
+ul li{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: inline-block;
+
+}
+
+ul li a{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 45px;
+    color:black;
+    text-decoration: none;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+ul li a:hover{
+    color: #ffd2c1
+
+}
+
+.menu-icon{
+    padding: 15px 15px;
+}
+
+.menu-icon a{
+    padding: 20px;
+    color: black;
+    font-size: 20px;
+    transition: 0.3s;
+}
+.menu-icon a:hover{
+    color: #ffd2c1
+}
+
+/* carousel */
+.carousel-item h1{
+    margin-top: -40%;
+    position: absolute;
+    text-align: center;
+    left: 43%;  
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+    transition: 0.1s;
+
+}
+.carousel-item h2{
+    margin-top: -37%;
+    position: absolute;
+    left: 8%;  
+    color: rgb(0, 0, 0);
+    font-size: 60px;
+    font-weight: 700;
+    transition: 0.1s;
+}
+.carousel-item h3{
+    margin-top: -30%;
+    position: absolute;
+    text-align: center;
+    left: 40%;  
+    color: rgb(212, 112, 112);
+    font-size: 60px;
+    font-weight: 700;
+    transition: 0.1s;
+}
+
+.carousel-item h1:hover{
+    color:#ffd2c1;
+}
+.carousel-item h2:hover{
+    color: #f3bca8;
+}
+.carousel-item h3:hover{
+    color: #000000;
+}
+
+.carousel-item button{
+    position: absolute;
+    margin-top: -15%;
+    left: 47.5%;
+    background-color: white;
+    border: none;
+    color: black;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius:0%;
+    padding: 15px 25px;
+    transition: 0.1s;
+}
+.carousel-item .button1{
+    background-color: #000000;
+    color:white;
+    left: 12%;
+    margin-top: -25%;
+
+
+}
+.carousel-item button:hover{
+    background-color: #f3bca8;
+}
+
+/* grid images */
+.category {
+    min-height: 700px;
+}
+
+.grid-4 {
+    grid-template-columns: repeat(4,1fr);
+}
+
+.grid {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 20px;
+    gap: 20px;
+    justify-content: center;
+    transition: all .3s;
+}
+
+.container {
+    max-width: 1115px;
+    margin-top:5%;
+}
+
+.grid-item {
+    height: 100%;
+    position: relative;
+}
+
+.bg {
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grid-item-a {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    transition: all .3s;
+}
+
+.grid-item-d {
+    transition: all .3s;
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.grid-item h2 {
+    position: relative;
+    top: 50%;
+}
+
+.text-center{
+    color:#fff !important; 
+}
+
+.f-l {
+    font-size: 2.5rem;
+}
+
+.f-xl {
+    font-size: 2.5rem;
+}
+
+.grid-item button {
+    position: relative;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    top: 76%;
+    left: 86%;
+    display: flex;
+    justify-self: flex-end;
+    padding: 1.5rem;
+    z-index: 1;
+}
+
+.grid-item-b button, .grid-item-c button {
+    top: 52%;
+    left: 70%;
+}
+
+.grid-item-d button {
+    left: 70%;
+    top: 69%;
+}
+
+/* paragraph */
+#paragraph{
+    text-align: center;
+    justify-content: center;
+    margin-top: 4%;
+    font-size: 21px;
+    font-weight:400;
+}
+
+/* title products */
+#products{
+    text-align: center;
+    display: block;
+    font-size: 35px;
+    font-weight: 600;
+    padding: 40px;
+    margin-top: 2%;
+    font-family: poppins sans-serif;
+
+}
+
+/* menu-mini */
+#menu-mini{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: -1%;
+
+}
+#menu-mini li{
+    list-style: none;
+    padding: 0 10px;
+ 
+}
+#menu-mini li a{
+    text-decoration: none;
+    font-size:16px;
+    font-weight: 600;
+    color: rgb(107, 103, 103);
+    transition: 0.3s ease;
+}
+#menu-mini li a:hover,
+#menu-mini li a.active{
+    color: #000000;
+    
+}
+#menu-mini li a.active::after,
+#menu-mini li a:hover::after{
+     content: "";
+     width: 100%;
+     height: 3px;
+     background: #000000;
+     display: block;
+     bottom: 7px;
+     left: 10px;
+}
+
+
+/* products */
+.container {
+    margin-top: 3%;
+    max-width: 1115px;
+    /* margin: 0 auto; */
+}
+
+.products .grid1 {
+    height: 100%;
+    grid-template-rows: 400px;
+}
+
+.grid1 {
+    display: grid;
+    grid-gap: 20px;
+    gap: 20px;
+    justify-content: center;
+    /* transition: all .3s; */
+}
+
+.grid-4 {
+    grid-template-columns: repeat(4,1fr);
+    /* transition: all .3s; */
+}
+
+.productcard {
+    height: 355px;
+ 
+}
+.grid-item1 {
+    height: 100%;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bg1{
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.productCard-top, .productCard-top .productImage {
+    height: inherit;
+}
+
+.text-center {
+    text-align: center;
+    justify-content: center;
+}
+
+.productName{
+    margin-top: 6%;
+    font-weight: 600;
+
+}
+p{
+    color: #000000;
+}
+
+.productPrice{
+    margin-top: -4%;
+}
+
+.productcard button {
+    position: relative;
+    top: -40%;
+    left: 77%;
+    z-index: 9;
+    padding: 1rem;
+} 
+
+.grid-item1 button {
+    display: flex;
+    justify-self: flex-end;
+    background-color: white;
+    border-radius: 50%;
+    
+}
+
+.btn {
+    border: none;
+    cursor: pointer;
+    background: none;
+    outline: none;
+} 
+
+/* newsletter */
+.news.container {
+    max-width: 1298px;
+    /* margin: 0 auto;
+    position: relative; */
+}
+
+.news{
+    margin-top:10%;
+    min-height: 300px;
+    background-color: #ffc9b5;
+    position: relative;
+    text-align: center;
+    
+}
+
+.news h2 {
+    /* letter-spacing: 1rem; */
+    color: #000000;
+    font-size: 50px;
+    font-family: a;
+}
+
+.title-news {
+    font-weight: 600;
+}
+
+form {
+    display: block;
+    margin-top: 3em;
+}
+
+.news form input {
+    padding: 0.9rem 4rem;
+}
+
+.news form button, .news form button>* {
+    position: relative;
+
+} 
+
+.news form button {
+    padding: 1rem 1.2rem;
+    outline: none;
+    left: -8%;
+    margin-top: -0.8%;
+    border-radius: 100% ;
+}
+
+.btn-round {
+    border-radius: 50%;
+
+}
+.flex {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+/* footer */
+.footer-top {
+    min-height: 10vh;
+}
+
+.footer-links li a{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 45px;
+    color:black;
+    text-decoration: none;
+    padding: 15px;
+}
+.social-link li a{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 45px;
+    color:black;
+    text-decoration: none;
+    padding: 17px;
+
+
+}
+.footer-links {
+    position: relative;
+    left: 10%;
+}
+
+.footer-bottom{
+    margin-top: 3%;
+
+}
+
+.bg-grey {
+    background-color: hsla(0,0%,77.3%,.9254901960784314);
+}
+
+.footer-bottom p{
+       margin-top: 1%;
+       justify-content: center;
+}
+
+.background-red{
+    background-color:  rgb(231, 166, 166) !important;
+}
+
+.add-cart{
+    position: absolute;
+    width: 100%;
+    background-color: darkgrey;
+    transition: all 0.3s  ease-in-out;
+    opacity: 0;
+    cursor: pointer;
+    text-align: center;
+}
+.add-cart:hover{
+   background-color: #ffc107;
+    transform: scale(1.1);
+    opacity: 1;
+}
+.menu-icon span{  
+    background-color: #000000;
+    position: absolute;
+    border-radius: 50%;
+    padding: .2rem 9px;
+    margin-top: -0.6%;
+    margin-left: -0.33%;
+    text-align: center;
+    
+    
+}
+span{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+    
+}

@@ -1,0 +1,162 @@
+ #productstitle{
+        text-align: center;
+        display: block;
+        font-size: 35px;
+        font-weight: 600;
+        margin-top: 6% !important;
+        font-family: poppins sans-serif;
+
+}
+
+
+#prodetails{
+    display: flex;
+    margin-top: 20px;
+    padding:4rem ;
+ 
+}
+
+#prodetails .single-pro-image{
+    width: 50%;
+    margin-left:15%;
+  
+
+}
+.single-pro-image{
+    justify-content: center;
+    text-align: center;
+ 
+}
+#MainImg{
+    margin-left: -10%;    
+}
+
+
+.small-img-group {
+    display: flex;
+    justify-content: center;
+    padding: 3px; 
+    margin-top: -75%;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin-left:3%;
+    width: 15%;
+
+}
+
+.small-img-col{
+    flex-basis: 21%;
+    cursor: pointer;
+
+}
+
+.products-size {
+    padding: 2rem 0;
+}
+
+.productssize {
+    display: flex;
+    width: 100%;
+}
+.product-name h2 {
+    font-size: 2.5rem;
+}
+.paragraph-price{
+    font-size: 1.5rem;
+    
+}
+.products-item{
+    margin-right:1rem; 
+
+}
+.products-size select {
+    padding: 1.2rem 1rem;
+    width: 12rem;
+    outline-color: none;
+}
+.product-button{
+    padding: 1rem 0;
+}
+.product-button button {
+    margin-right: 1rem;
+    padding: 1.3rem 2rem;
+    outline-color: none;
+}
+.product-button .btn-black {
+    background-color: #000;
+    color: #fff;
+    padding: 1.33rem 3.3rem;
+
+}
+.product-button .btn-white {
+    background-color: #fff;
+    color: #000;
+}
+.black{
+    color: #000;
+    margin-left: 1.2rem;
+    font-size: 17px;
+}
+.bx-heart-circle{
+    margin-left: 0.4rem;
+} 
+.product-paragraph p {
+    font-size: 16px;
+
+}
+/* paragraph menu */
+#paragraph-menu{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    margin-top:1%;
+
+}
+#paragraph-menu{
+    list-style: none;
+    padding:0  10px;
+ 
+}
+#paragraph-menu li a{
+    text-decoration: none;
+    font-size:16px;
+    font-weight: 600;
+    color: rgb(107, 103, 103);
+    transition: 0.3s ease;
+    padding: 35px;
+}
+#paragraph-menu li a:hover,
+#paragraph-menu li a.active{
+    color: #000000;
+    
+}
+#paragraph-menu li a.active::after,
+#paragraph-menu li a:hover::after{
+     content: "";
+     width: 100%;
+     height: 3px;
+     background: #000000;
+     display: block;
+     bottom: 7px;
+     left: 10px;
+}
+
+.menu-icon span{  
+    background-color: #000000;
+    position: absolute;
+    border-radius: 50%;
+    padding: .2rem 9px;
+    margin-top: -0.6%;
+    margin-left: -0.33%;
+    text-align: center;
+    
+    
+}
+span{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+    
+}
